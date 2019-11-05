@@ -1,0 +1,22 @@
+{
+  "name": "Looker DashChat",
+  "version": "0.1",
+  "description": "Easy Collaboration on a Looker Dashboard",
+  "permissions": ["webRequest","tabs","*://hack.looker.com/dashboards/*"],
+  "options_ui": {
+    "page": "menu.html",
+    "open_in_tab": false
+  },
+  "content_scripts": [
+	{
+		"matches":["*://hack.looker.com/dashboards/*"],
+		"js":["dashchat.js"]  
+	}
+  ],
+  "browser_action": {
+    "default_icon": "jiiIcon_small.png",
+    "default_popup": "menu.html",
+    "default_title": "Looker DashChat"
+  },
+  "manifest_version":1
+ }
