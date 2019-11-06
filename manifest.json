@@ -1,8 +1,8 @@
 {
   "name": "Looker DashChat",
-  "version": "0.1",
+  "version": "0.7",
   "description": "Easy Collaboration on a Looker Dashboard",
-  "permissions": ["webRequest","tabs","*://hack.looker.com/dashboards/*"],
+  "permissions": ["webRequest","tabs","*://hack.looker.com/*"],
   "options_ui": {
     "page": "menu.html",
     "open_in_tab": false
@@ -14,9 +14,9 @@
 	}
   ],
   "browser_action": {
-    "default_icon": "jiiIcon_small.png",
+    "default_icon": "DashChat-Circle-Black-small.png",
     "default_popup": "menu.html",
     "default_title": "Looker DashChat"
   },
-  "manifest_version":1
+  "manifest_version":2
  }
